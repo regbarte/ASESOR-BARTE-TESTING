@@ -13,12 +13,21 @@ export const Default = () => <Banner />;
 
 export const WithCustomMessage = () => (
   <Banner>
-    <h2>Special Limited Offer</h2>
+    <h2 className="text-red-500">🚀 Limited Time Deal! 🚀</h2>
   </Banner>
 );
 
-export const DarkMode = () => (
-  <div className="bg-gray-900 p-4">
-    <Banner />
+export const WithImageBackground = () => (
+  <div
+    className="p-4"
+    style={{
+      backgroundImage: "url('https://source.unsplash.com/random/800x200')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    <Banner>
+      <h2 className="text-white">Welcome to Our Exclusive Sale!</h2>
+    </Banner>
   </div>
 );
