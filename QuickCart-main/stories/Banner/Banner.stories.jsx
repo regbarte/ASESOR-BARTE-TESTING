@@ -10,11 +10,13 @@ export default {
 };
 
 export const Default = () => <Banner />;
+
 export const WithCustomMessage = () => (
   <Banner>
     <h2>Special Limited Offer</h2>
   </Banner>
 );
+
 export const DarkMode = () => (
   <div className="bg-gray-900 p-4">
     <Banner />
